@@ -1,0 +1,15 @@
+<h2>Attribute Directives</h2>
+
+<!-- ngClass Directive -->
+<div [ngClass]="{'text-red': isRed, 'text-bold': isBold}">
+  This is styled with ngClass
+</div>
+<button (click)="isRed = !isRed">Toggle Red</button>
+<button (click)="isBold = !isBold">Toggle Bold</button>
+
+<!-- ngStyle Directive -->
+<div [ngStyle]="divStyle">
+  This div is styled with ngStyle
+</div>
+<button (click)="divStyle['background-color'] = divStyle['background-color'] === 'yellow' ? 'green' : 'yellow'">Toggle
+  Background Color</button>

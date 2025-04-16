@@ -1,0 +1,53 @@
+<!-- HTML Template -->
+<div class="form-container">
+    <h1 class="container">Registration Form</h1>
+    <form #studentForm="ngForm" (ngSubmit)="onSubmit(studentForm)" novalidate>
+        <div class="form-group">
+            <input type="text" [(ngModel)]="student.name" name="name" placeholder="Name" required #name="ngModel">
+
+            <div *ngIf="name.invalid && name.touched" class="error-message">
+               <small *ngIf="name.errors?.['required']">This is required</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="number" [(ngModel)]="student.age" name="age" placeholder="Age" required min="18"
+                #age="ngModel">
+            <div *ngIf="age.invalid && age.touched" class="error-message">
+                Age is required and must be at least 18.
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="email" [(ngModel)]="student.email" name="email" placeholder="Email" email required
+                #email="ngModel">
+            <div *ngIf="email.invalid && email.touched" class="error-message">
+                A valid email is required.
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="course">Course</label>
+            <br>
+            <select [(ngModel)]="student.course" name="course" id="course" required #course="ngModel"
+                aria-label="Select a course">
+                <option value="" disabled selected>Select a course</option>
+                <option *ngFor="let course of courses" [value]="course">{{ course }}</option>
+            </select>
+
+            <div *ngIf="course.invalid && course.touched" class="error-message">
+                Course is required.
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button type="submit" class="submit-btn" [disabled]="studentForm.invalid">Submit</button>
+            <button type="button" class="reset-btn" (click)="resetForm(studentForm)">Reset</button>
+        </div>
+    </form>
+
+    <div *ngIf="isSubmitted" class="submitted-data">
+        <h3>Submitted Data:</h3>
+        <p>Name: {{submittedForm?.name}}</p>
+        <p>Age: {{submittedForm?.age}}</p>
+        <p>Email: {{submittedForm?.email}}</p>
+        <p>Course: {{submittedForm?.course}}</p>
+    </div>
+</div>

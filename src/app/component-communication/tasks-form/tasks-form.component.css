@@ -1,0 +1,42 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .task-input {
+    margin: 20px;
+  }
+  
+  input {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  
+  button.active {
+    background-color: green;
+    color: white;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: green;
+  }
+  
+  .pending {
+    color: red;
+  }
+  
+  li {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

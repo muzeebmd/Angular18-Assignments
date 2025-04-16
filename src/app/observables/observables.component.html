@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <div class="card shadow-lg">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">🍇 Custom Observable Example</h4>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li *ngFor="let msg of messages" class="list-group-item d-flex justify-content-between align-items-center">
+            {{ msg }}
+            <span *ngIf="msg.startsWith('Next')" class="badge bg-success">Next</span>
+            <span *ngIf="msg.startsWith('Error')" class="badge bg-danger">Error</span>
+            <span *ngIf="msg.startsWith('✅')" class="badge bg-info text-dark">Complete</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

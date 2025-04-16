@@ -1,0 +1,22 @@
+<div class="user-profile">
+    <!-- String Interpolation -->
+    <h1>Welcome, {{ userName }}!</h1>
+  
+    <!-- Property Binding -->
+    <p>Your are From: <input [value]="userCity" readonly></p>
+  
+    <!-- Event Binding -->
+    <button (click)="updateUser()">Update User</button>
+  
+    <!-- Two-Way Binding -->
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" [(ngModel)]="userName" placeholder="Enter your name">
+  
+      <label for="city">City:</label>
+      <input id="city" [(ngModel)]="userCity" placeholder="Enter your city">
+  
+      <label for="email">Email:</label>
+      <input id="email" type="email" [(ngModel)]="userEmail" placeholder="Enter your email">
+    </div>
+  </div>

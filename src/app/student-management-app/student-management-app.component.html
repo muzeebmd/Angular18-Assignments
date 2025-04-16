@@ -1,0 +1,55 @@
+<div class="container">
+    <h2>Student Management</h2>
+
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+
+        <!-- Roll Number -->
+        <input formControlName="rollno" placeholder="Roll Number" />
+        <div *ngIf="studentForm.get('rollno')?.invalid && studentForm.get('rollno')?.touched">
+            <small *ngIf="studentForm.get('rollno')?.errors?.['pattern']">Only numbers allowed.</small>
+        </div>
+
+
+        <!-- Name -->
+        <input formControlName="name" placeholder="Name" />
+        <div *ngIf="studentForm.get('name')?.invalid && studentForm.get('name')?.touched">
+            <small *ngIf="studentForm.get('name')?.errors?.['pattern']">Only alphabets allowed.</small>
+        </div>
+
+        <input formControlName="branch" placeholder="Branch" />
+        <input formControlName="email" placeholder="Email" />
+
+        <button type="submit">{{ isEdit ? 'Update' : 'Add' }} Student</button>
+        <button type="button" (click)="resetForm()">Clear</button>
+        <button type="button" (click)="loadStudents()">Get Students List</button>
+    </form>
+
+    <div *ngIf="alertMsg" class="alert">{{ alertMsg }}</div>
+
+    <h3>Student List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{ student.rollno }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.branch }}</td>
+                <td>{{ student.email }}</td>
+                <td>
+                    <button (click)="onEdit(student)">Edit</button>
+                    <button (click)="onDelete(student.id!)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button class="delete-all" (click)="onDeleteAll()">Delete All Students</button>
+</div>

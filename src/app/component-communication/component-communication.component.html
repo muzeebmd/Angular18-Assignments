@@ -1,0 +1,3 @@
+<h1>Task Management App</h1>
+<app-tasks (taskAdded)="addTask($event)"></app-tasks>
+<app-task-list [tasks]="tasks" (taskDeleted)="deleteTask($event)" (taskEdited)="editTask($event)"></app-task-list>

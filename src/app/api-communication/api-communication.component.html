@@ -1,0 +1,102 @@
+<h1>Api-works</h1>
+<!-- Fetching the data of all students -->
+<button (click)="fetchStudentsList()">Fetch Students</button>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of fetchStudents" (click)="students(student)">
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
+    </tr>
+  </tbody>
+</table>
+<!-- Section to fetch a student by ID -->
+<div class="student-by-id">
+  <h2>Fetch Student By ID</h2>
+  <label for="studentId">Enter Student ID: </label>
+  <input type="number" id="studentId" [(ngModel)]="studentId" />
+  <button (click)="getStudentById(studentId)">Get Student</button>
+  <div>
+    <div *ngIf="students">
+      <h3>Fetched Student Info</h3>
+      <p><strong>ID:</strong> {{ students.id }}</p>
+      <p><strong>Name:</strong> {{ students.name }}</p>
+      <p><strong>Age:</strong> {{ students.age }}</p>
+    </div>
+
+    <!-- Section to add new student -->
+    <div class="add-student">
+      <h2>Add New Student</h2>
+      <form (ngSubmit)="addStudent()">
+
+        <label for="id">ID</label>
+        <input type="string" [(ngModel)]="newStudent.id" name="id" required />
+
+        <label for="name">Name</label>
+        <input type="text" [(ngModel)]="newStudent.name" name="name" required />
+
+        <label for="age">Age</label>
+        <input type="number" [(ngModel)]="newStudent.age" name="age" required />
+
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+    <!-- Update the Student details -->
+
+    <!-- Display List of Students -->
+    <h2>Student List</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of fetchStudents">
+          <td>{{ student.name }}</td>
+          <td>{{ student.age }}</td>
+          <td>
+            <!-- When you click on Edit, it will call editStudent method and populate the form with that student's data -->
+            <button (click)="editStudent(student)">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Form to Edit Student -->
+    <div *ngIf="studentToUpdate.id !== null">
+      <h3>Edit Student</h3>
+      <form (ngSubmit)="updateStudent()">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" [(ngModel)]="studentToUpdate.name" name="name" required />
+        </div>
+
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" id="age" [(ngModel)]="studentToUpdate.age" name="age" required />
+        </div>
+
+        <div>
+          <button type="submit">Update Student</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Delete student by id -->
+
+    <div class="student-by-id">
+      <h3> Delete Student by Id</h3>
+      <label for="studentId">Enter Student ID: </label>
+      <input type="string" id="studentId" [(ngModel)]="studentId" />
+      <button (click)="deleteStudent(studentId)">Delete Student</button>
+    </div>
+    <!-- Delete all Students -->
+    <button (click)="deleteAllStudents()">Delete All Students</button>

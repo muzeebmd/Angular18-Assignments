@@ -1,0 +1,17 @@
+
+h1 {
+    color: #333;
+  }
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  li {
+    margin: 5px 0;
+  }
+  
+  .image-container {
+    max-width: 35%;
+    
+  }
+ 

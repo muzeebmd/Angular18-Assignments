@@ -1,0 +1,60 @@
+{
+  "students": [
+    {
+      "id": "101",
+      "rollno": "101",
+      "name": "John Doe",
+      "branch": "CSE",
+      "email": "john.doe@example.com"
+    },
+    {
+      "id": "102",
+      "rollno": "102",
+      "name": "Alice Smith",
+      "branch": "ECE",
+      "email": "alice.smith@example.com"
+    },
+    {
+      "id": "103",
+      "rollno": "103",
+      "name": "Bob Johnson",
+      "branch": "EEE",
+      "email": "bob.johnson@example.com"
+    },
+    {
+      "id": "104",
+      "rollno": "104",
+      "name": "Clara Lee",
+      "branch": "CSE",
+      "email": "clara.lee@example.com"
+    },
+    {
+      "id": "33d7",
+      "rollno": "105",
+      "name": "Mohammad",
+      "branch": "MECH",
+      "email": "Mohammadmd@gmail.com"
+    },
+    {
+      "id": "47fc",
+      "rollno": "106",
+      "name": "Rahman",
+      "branch": "cse",
+      "email": "sai@12"
+    },
+    {
+      "rollno": "107",
+      "name": "Rahman",
+      "branch": "EcE",
+      "email": "rahman@12",
+      "id": "ee5f"
+    },
+    {
+      "rollno": "108",
+      "name": "raju",
+      "branch": "ECE",
+      "email": "rahman@12",
+      "id": "c459"
+    }
+  ]
+}

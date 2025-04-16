@@ -1,0 +1,10 @@
+<ul>
+    <li *ngFor="let task of tasks">
+      <app-task-card>
+        <h3>{{ task.title }}</h3>
+        <p>{{ task.description }}</p>
+      </app-task-card>
+      <button (click)="onDelete(task.id)">Delete</button>
+      <button (click)="onEdit(task)">Edit</button>
+    </li>
+  </ul>

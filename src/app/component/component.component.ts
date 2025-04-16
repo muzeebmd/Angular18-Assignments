@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-component',
   imports: [RouterOutlet,RouterLink],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './component.component.html',
+  styleUrl: './component.component.css'
 })
-export class AppComponent {
-  title = 'AngularDemo';
+export class ComponentComponent {
+
 }

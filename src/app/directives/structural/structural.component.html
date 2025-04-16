@@ -1,0 +1,29 @@
+<h2>Structural Directives</h2>
+
+<!-- *ngIf Directive -->
+<p *ngIf="showText">This is a conditional paragraph visible with *ngIf.</p>
+<button (click)="showText = !showText">Toggle Text</button>
+
+<!-- *ngFor Directive -->
+<h3>Color List:</h3>
+<ul>
+  <li *ngFor="let color of colors">{{ color }}</li>
+</ul>
+
+<h3>Select a Color:</h3>
+
+<select [(ngModel)]="selectedColor">
+  <option value="">-- Select a color --</option>
+  <option value='Red' style="color: red;">Red</option>
+  <option value="Blue" style="color: blue;">Blue</option>
+  <option value="Green" style="color: green;">Green</option>
+</select>
+
+<h3>Selected Color:</h3>
+
+<div [ngSwitch]="selectedColor">
+  <p *ngSwitchCase="'Red'" style="color: red;">You selected Red!</p>
+  <p *ngSwitchCase="'Blue'" style="color: blue;">You selected Blue!</p>
+  <p *ngSwitchCase="'Green'" style="color: green;">You selected Green!</p>
+  <p *ngSwitchDefault>Please choose a color!</p>
+</div>

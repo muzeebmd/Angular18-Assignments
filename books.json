@@ -1,0 +1,114 @@
+{
+  "books": [
+    {
+      "author": "Chinua Achebe",
+      "country": "Nigeria",
+      "imageLink": "https://m.media-amazon.com/images/I/81jS+AO-NiL.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
+      "pages": 209,
+      "title": "Things Fall Apart",
+      "year": 1958,
+      "genre": "Fiction"
+    },
+    {
+      "author": "Hans Christian Andersen",
+      "country": "Denmark",
+      "imageLink": "https://hachette.imgix.net/books/9781444954265.jpg?auto=compress,format",
+      "language": "Danish",
+      "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
+      "pages": 784,
+      "title": "Fairy tales",
+      "year": 1836,
+      "genre": "Non-Fiction"
+    },
+    {
+      "author": "Dante Alighieri",
+      "country": "Italy",
+      "imageLink": "https://tse4.mm.bing.net/th?id=OIP.gisMB5rUydX7-u9LxsK5vAAAAA&rs=1&pid=ImgDetMain",
+      "language": "Italian",
+      "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
+      "pages": 928,
+      "title": "The Divine Comedy",
+      "year": 1315,
+      "genre": "Fiction"
+    },
+    {
+      "author": "Unknown",
+      "country": "Sumer and Akkadian Empire",
+      "imageLink": "https://th.bing.com/th/id/OIP.7xVls0_2Xc6ny-JFuvRbDwHaLS?rs=1&pid=ImgDetMain",
+      "language": "Akkadian",
+      "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
+      "pages": 160,
+      "title": "The Epic Of Gilgamesh",
+      "year": -1700,
+      "genre": "Sci-Fi"
+    },
+    {
+      "author": "Unknown",
+      "country": "Achaemenid Empire",
+      "imageLink": "https://tse3.mm.bing.net/th?id=OIP.QEc2kLBqM_oKJ52K_KUWVQAAAA&rs=1&pid=ImgDetMain",
+      "language": "Hebrew",
+      "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
+      "pages": 176,
+      "title": "The Book Of Job",
+      "year": -600,
+      "genre": "Non-Fiction"
+    },
+    {
+      "author": "Unknown",
+      "country": "India/Iran/Iraq/Egypt/Tajikistan",
+      "imageLink": "https://tse2.mm.bing.net/th?id=OIP.cRqQnB6vgx9H2T7vrVSEwQHaFj&rs=1&pid=ImgDetMain",
+      "language": "Arabic",
+      "link": "https://en.wikipedia.org/wiki/One_Thousand_and_One_Nights\n",
+      "pages": 288,
+      "title": "One Thousand and One Nights",
+      "year": 1200,
+      "genre": "Fiction"
+    },
+    {
+      "author": "Unknown",
+      "country": "Iceland",
+      "imageLink": "https://m.media-amazon.com/images/I/41i-2bNna2L._SY445_SX342_.jpg",
+      "language": "Old Norse",
+      "link": "https://en.wikipedia.org/wiki/Nj%C3%A1ls_saga\n",
+      "pages": 384,
+      "title": "Nj\u00e1l's Saga",
+      "year": 1350,
+      "genre": "Non-Fiction"
+    },
+    {
+      "author": "Jane Austen",
+      "country": "United Kingdom",
+      "imageLink": "https://i.pinimg.com/originals/0a/91/4d/0a914d521dd1f37449d2a40510529181.jpg",
+      "language": "English",
+      "link": "https://en.wikipedia.org/wiki/Pride_and_Prejudice\n",
+      "pages": 226,
+      "title": "Pride and Prejudice",
+      "year": 1813,
+      "genre": "Sci-Fi"
+    },
+    {
+      "author": "Honor\u00e9 de Balzac",
+      "country": "France",
+      "imageLink": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663778272i/62681314.jpg",
+      "language": "French",
+      "link": "https://en.wikipedia.org/wiki/Le_P%C3%A8re_Goriot\n",
+      "pages": 443,
+      "title": "Le P\u00e8re Goriot",
+      "year": 1835,
+      "genre": "Fiction"
+    },
+    {
+      "author": "Samuel Beckett",
+      "country": "Republic of Ireland",
+      "imageLink":"https://tse2.mm.bing.net/th?id=OIP.We3y3mYyajzrOA-V3bk4egHaMQ&rs=1&pid=ImgDetMain",
+      "language": "French, English",
+      "link": "https://en.wikipedia.org/wiki/Molloy_(novel)\n",
+      "pages": 256,
+      "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
+      "year": 1952,
+      "genre": "Non-Fiction"
+    }
+  ]
+}

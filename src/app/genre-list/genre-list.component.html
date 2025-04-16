@@ -1,0 +1,16 @@
+<div class="genre-filter">
+    <button (click)="filterBooks('all')" class="genre-button">All</button>
+    <button (click)="filterBooks('fiction')" class="genre-button">Fiction</button>
+    <button (click)="filterBooks('non-fiction')" class="genre-button">Non-Fiction</button>
+    <button (click)="filterBooks('sci-fi')" class="genre-button">Sci-Fi</button>
+  </div>
+  
+  <div class="book-list">
+    <div *ngFor="let book of filteredBooks" class="book-card">
+      <img [src]="book.imageLink" alt="{{ book.title }}">
+      <h3>{{ book.title }}</h3>
+      <p>{{ book.author }}</p>
+      <p>{{ book.year }}</p>
+    </div>
+  </div>
+  

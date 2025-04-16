@@ -1,0 +1,21 @@
+
+<div class="book-card">
+    <div class="card-image">
+      <img [src]="book.imageLink" alt="{{ book.title }}">
+    </div>
+  
+    <div class="card-body">
+      <h2 class="title">{{ book.title }}</h2>
+      <p class="author"><strong>Author:</strong> {{ book.author }}</p>
+      <p class="genre"><strong>Genre:</strong> {{ book.genre }}</p>
+      <p class="country"><strong>Country:</strong> {{ book.country }}</p>
+      <p class="language"><strong>Language:</strong> {{ book.language }}</p>
+      <p class="year"><strong>Year:</strong> {{ book.year }}</p>
+      <p class="pages"><strong>Pages:</strong> {{ book.pages }}</p>
+    </div>
+  
+    <div class="card-footer">
+      <a [href]="book.link" target="_blank" class="btn">Read More</a>
+    </div>
+  </div>
+  

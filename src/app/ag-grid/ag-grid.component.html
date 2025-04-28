@@ -1,0 +1,17 @@
+<h1>AG-GRID Example</h1>
+
+<!-- Export to CSV Button -->
+<button (click)="onExport()" class="btn-export">Export to CSV</button>
+
+<!-- AG Grid Component -->
+<ag-grid-angular class="ag-theme-quartz" style="height: 500px;" 
+[rowData]="rowData" 
+[columnDefs]="colDefs"
+[pagination]="pagination" 
+[paginationPageSize]="paginationPageSize"
+[paginationPageSizeSelector]="paginationPageSizeSelector" 
+[rowClassRules]="rowClassRules"
+[defaultColDef]="defaultColDef" 
+(gridReady)="onGridReady($event)" 
+[rowSelection]="rowSelection">
+</ag-grid-angular>

@@ -18,6 +18,9 @@
     "@angular/platform-browser": "^19.1.0",
     "@angular/platform-browser-dynamic": "^19.1.0",
     "@angular/router": "^19.1.0",
+    "ag-grid-angular": "^33.2.4",
+    "ag-grid-community": "^33.2.4",
+    "ag-grid-enterprise": "^33.2.4",
     "bootstrap": "^5.3.5",
     "cors": "^2.8.5",
     "rxjs": "~7.8.0",
@@ -36,6 +39,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.7.2"
+    "typescript": "~5.7.2",
+    "vite": "^6.3.3"
   }
 }

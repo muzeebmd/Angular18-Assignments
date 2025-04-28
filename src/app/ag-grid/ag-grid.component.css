@@ -1,0 +1,53 @@
+/* General Styling */
+.ag-theme-quartz {
+    --ag-background-color: #f1f1f1;
+    --ag-header-background-color: #4caf50;
+    --ag-row-hover-color: #dcdcdc;
+    --ag-foreground-color: #000;
+}
+
+/* Custom button styling for Export */
+.btn-export {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-export:hover {
+    background-color: #86dd8a;
+    transition: 0.3s ease;
+}
+
+/* Styling for cells with green-cell class */
+:host ::ng-deep .green-cell {
+    background-color: #82c930 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Row styling for Tesla */
+:host ::ng-deep .red-row {
+    background-color: #ff4c4c !important;
+    color: white;
+}
+
+/* Adding hover effect on rows */
+.ag-row-hover {
+    background-color: #e0f7fa !important;
+}
+
+/* Column Header styling */
+.ag-header-cell {
+    background-color: #92da95 !important;
+    color: white;
+    font-weight: bold;
+}
+
+.ag-header-cell:hover {
+    background-color: #66bb6a !important;
+}

@@ -3,7 +3,6 @@ import { HomeComponent } from './component/home/home.component';
 import { AboutComponent } from './component/about/about.component';
 import { AwardsComponent } from './component/awards/awards.component';
 import { StatsComponent } from './component/stats/stats.component';
-
 import { DatabindingComponent } from './databinding/databinding.component';
 import { ComponentCommunicationComponent } from './component-communication/component-communication.component';
 import { ComponentComponent } from './component/component.component';
@@ -15,9 +14,9 @@ import { StudentComponent } from './student-management-app/student-management-ap
 import { DirectivesComponent } from './directives/directives.component';
 import { StructuralComponent } from './directives/structural/structural.component';
 import { AttributeComponent } from './directives/attribute/attribute.component';
-
 import { UserDashboardComponent } from './Pipes/user-dashboard/user-dashboard.component';
 import { ObservablesComponent } from './observables/observables.component';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
 
 export const routes: Routes = [
     //Components
@@ -85,6 +84,10 @@ export const routes: Routes = [
     //Observables
     {
         path: 'observables', component: ObservablesComponent,
+    },
+    //Ag-Grid
+    {
+        path:'ag-Grid', component:AgGridComponent,
     }
 ];
 

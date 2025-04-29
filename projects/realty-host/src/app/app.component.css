@@ -1,0 +1,11 @@
+
+.agent{
+    width: 60%;
+    background-color: aqua;
+    float: left;
+}
+.property{
+    width: 40%;
+    background-color: cadetblue;
+    float: left;
+}

@@ -1,0 +1,7 @@
+<h2>Properties</h2>
+<ul class="properties-list">
+  <li class="property-item" *ngFor="let prop of properties">
+    <img [src]="prop.imageUrl" style="height: 100px; width: 100px;" (click)="selectProperty(prop)" class="mouse">
+    <div> {{ prop.name }} - {{ prop.location }}</div>
+  </li>
+</ul>

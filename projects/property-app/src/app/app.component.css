@@ -1,0 +1,18 @@
+.mouse{
+    cursor: pointer;
+}
+.properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between items */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .property-item {
+    width: calc(33.33% - 10px); /* 3 items per row with some space in between */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
